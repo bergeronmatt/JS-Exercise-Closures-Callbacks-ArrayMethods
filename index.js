@@ -48,9 +48,10 @@ function processFirstItem(stringList, callback) {
  * [2] Invoking `processLength` passing `[]` and `(num) => "There are " + num`,
  * should return "There are 0".
 */
-function processLength(/* CODE HERE */) {
-  /* CODE HERE */
-}
+function processLength(list, callback) {
+  callback = num => (num);
+  return callback(list.length);
+};
 
 /**
  * ### Challenge `processLastItem`
@@ -118,7 +119,6 @@ function processProduct(/* CODE HERE */) {
  * 
  * @instructions
  * Implement a higher-order function called `processContains`.
- * It takes three arguments:
  * @param item of any kind.
  * @param list array of elements of any kind.
  * @param callback function that takes a boolean as its argument.
